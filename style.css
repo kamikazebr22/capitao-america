@@ -1,0 +1,511 @@
+
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    background-color: black;
+    background-image: url("https://wallpapercave.com/uwp/uwp4975201.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+nav {
+    width: 100%;
+    padding: 18px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    border-bottom: 2px solid #8b0000;
+
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+nav a {
+    display: inline-block;
+
+    margin: 5px 12px;
+    padding: 10px 18px;
+
+    text-decoration: none;
+
+    color: red;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+    background: #8b0000;
+
+    border-color: red;
+
+    box-shadow: 0 0 15px red;
+}
+
+
+/* =====================================================
+   TÍTULO PRINCIPAL
+===================================================== */
+
+h1 {
+    margin: 50px 0 25px;
+
+    text-align: center;
+
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+
+    color: black;
+
+    -webkit-text-stroke: 1px red;
+
+    text-shadow:
+        0 0 5px red,
+        0 0 15px red;
+}
+
+
+/* =====================================================
+   SUBTÍTULO
+===================================================== */
+
+h3 {
+    margin: 20px;
+
+    text-align: center;
+
+    font-size: 25px;
+    font-style: italic;
+
+    color: black;
+
+    -webkit-text-stroke: 1px red;
+}
+
+
+/* =====================================================
+   PARÁGRAFOS
+===================================================== */
+
+p {
+    max-width: 900px;
+
+    margin: 20px auto;
+    padding: 10px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 22px;
+    font-style: italic;
+
+    line-height: 1.6;
+
+-webkit-text-stroke: 1px red;
+
+    text-shadow:
+        0 0 5px red,
+        0 0 15px red;
+
+
+}
+
+
+/* =====================================================
+   LISTAS
+===================================================== */
+
+ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 30px auto;
+    padding: 20px;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   BOTÕES
+===================================================== */
+
+button {
+    display: block;
+
+    margin: 20px auto;
+    padding: 12px 28px;
+
+    background: black;
+
+    color: red;
+
+    border: 2px solid darkred;
+    border-radius: 20px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 8px darkred;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    color: white;
+    background: darkred;
+
+    border-color: red;
+
+    box-shadow:
+        0 0 10px red,
+        0 0 25px red;
+}
+
+
+/* =====================================================
+   ÁREA PRINCIPAL
+===================================================== */
+
+main {
+    max-width: 1000px;
+
+    margin: 40px auto;
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    border: 1px solid rgba(255, 0, 0, 0.4);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 0, 0.3),
+        inset 0 0 20px rgba(255, 0, 0, 0.08);
+
+    backdrop-filter: blur(4px);
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+footer {
+    background-color: #111;
+    color: white;
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+.footer h2 {
+    color: #e50914;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #444;
+
+    margin: 25px auto;
+
+    max-width: 600px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #e50914;
+}
+
+.copyright {
+    color: #aaa;
+
+    font-size: 14px;
+
+    margin-top: 30px !important;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+        margin-top: 35px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    nav a {
+        display: block;
+
+        margin: 8px auto;
+
+        width: 80%;
+    }
+
+    main {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+td{
+
+text-align: center;
+font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+
+    color: black;
+
+    -webkit-text-stroke: 1px red;
+
+    text-shadow:
+        0 0 5px red,
+        0 0 15px red;
+
+
+
+}
+
+tr{font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+
+    color: black;
+
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+
+    text-shadow:
+        0 0 5px red,
+        0 0 15px red;
+
+}
+
+b{font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+
+    color: black;
+
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+
+    text-shadow:
+        0 0 5px red,
+        0 0 15px red;
+
+
+}
+li{ -webkit-text-stroke: 1px rgb(255, 0, 0);
+
+    text-shadow:
+        0 0 5px red,
+        0 0 15px red;
+
+}
+ 
+
+
+
+#lista{
+text-align: center
+;
+background-color: #111;
+opacity: 0.9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #222;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: blue;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+textarea{
+display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+
+}
+
+video{
+  width: 600px;
+  border: 10px solid gray;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  background-color: #111;
+}
+
+h3{
+    margin: 50px 0 25px;
+
+    text-align: center;
+
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+
+    color: black;
+
+    -webkit-text-stroke: 1px red;
+
+    text-shadow:
+        0 0 5px red,
+        0 0 15px red;
+
+background-color: black;
+
+
+}
+
+label{
+margin: 50px 0 25px;
+
+    text-align: center;
+
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+
+    color: black;
+
+    -webkit-text-stroke: 1px red;
+
+    text-shadow:
+        0 0 5px red,
+        0 0 15px red;
+
+background-color: black;
+
+
+
+}
+
+footer a:hover{
+    color: white;
+}
+
+h1 a:hover{
+    color: white;
+}
+
+
+
+}
